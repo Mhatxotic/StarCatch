@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <META charset="utf8">
+	<META name="apple-mobile-web-app-capable" content="yes">
+	<META name="apple-mobile-web-app-status-bar-style" content="black">
+	<META name="apple-mobile-web-app-title" content="StarCatch">
+	<META name="author" content="Mhatxotic Design">
+	<META name="copyright" content="Copyright © 2013-2025 Mhatxotic Design, All Rights Reserved">
+	<META name="description" content="An old, addictive and very hard Macromedia Flash game made in 2013 and now thanks to the Ruffle emulator, it can now be played again, even on a phone or a pad but was originally meant for a desktop and mouse.">
+	<META name="format-detection" content="telephone=no">
+	<META name="generator" content="BBEdit 15.1.3">
+	<META name="google-site-verification" content="BvWxrqmgaIxqe_W8AW3OGK0fdCI_JfB_-gcOOxCF9_4">
+	<META name="googlebot" content="index,follow">
+	<META name="og:description" content="An old, addictive and very hard Macromedia Flash game made in 2013 and now thanks to the Ruffle emulator, it can now be played again, even on a phone or a pad but was originally meant for a desktop and mouse.">
+	<META name="og:image" content="https://repository-images.githubusercontent.com/919777181/648839db-b8f1-425b-8c2b-ae39701ee4b0">
+	<META name="og:title" content="StarCatch">
+	<META name="og:url" content="https://mhatxotic.github.io/StarCatch">
+	<META name="robots" content="index,follow">
+	<META name="viewport" content="width=device-width, initial-scale=1">
+	<TITLE>StarCatch</TITLE>
+  <STYLE>body { border:0; margin:0; padding:0; overflow:hidden; scroll:no; background-color:black; }</STYLE>
+</head>
+<body>
+  <div id="ruffle"></div>
+  <script src="https://mhatxotic.github.io/StarCatch/ruffle/ruffle.js"></script>
+  <script>
+    var ruffle = window.RufflePlayer.newest(),
+    player = Object.assign(document.getElementById("ruffle").
+        appendChild(ruffle.createPlayer()), {
+      width: 1920,
+      height: 1080,
+      style: "width: 100vw; height: 100vh",
+    });
+    player.config = {
+      autoplay: "on",
+      unmuteOverlay: "visible",
+      contextMenu: "off"
+    };
+    player.load({ url:
+      "https://mhatxotic.github.io/StarCatch/starcatch.swf" });
+  </script>
+</body>
+</html>
